@@ -1,6 +1,7 @@
 # Full Stack Open - Part 0 Exercises
 
 ## Exercise 0.4: New note diagram
+```mermaid
 sequenceDiagram
     participant browser
     participant server
@@ -35,9 +36,10 @@ sequenceDiagram
     server-->>browser: Updated JSON [{ "content": "new note", ... }, ... ]
     deactivate server
 
-    Note over browser: Browser renders the notes list
+    Note over browser: Browser renders the notes list```
 
 ## Exercise 0.5: Single page app diagram
+```mermaid
 sequenceDiagram
     participant browser
     participant server
@@ -64,9 +66,10 @@ sequenceDiagram
     server-->>browser: JSON data
     deactivate server
 
-    Note over browser: Browser renders notes using the SPA logic
+    Note over browser: Browser renders notes using the SPA logic```
 
 ## Exercise 0.6: New note in Single page app diagram
+```mermaid
 sequenceDiagram
     participant browser
     participant server
@@ -79,4 +82,4 @@ sequenceDiagram
     activate server
     Note right of browser: JSON: { "content": "...", "date": "..." }
     server-->>browser: HTTP 201 Created
-    deactivate server
+    deactivate server```
